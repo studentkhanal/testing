@@ -1,6 +1,9 @@
 package com.bikash.google;
 
 import org.testng.annotations.Test;
+
+import org.testng.Assert;
+
 import org.testng.annotations.BeforeTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -17,8 +20,9 @@ WebDriver driver;
   public void googleHome() {
 		driver.get("http://www.google.com");
 		driver.findElement(By.id("lst-ib")).sendKeys("Testing");
-		driver.findElement(By.name("btnk")).click();
+		driver.findElement(By.name("btnG")).click();
 		
+		Assert.assertEquals(driver.getTitle(), "Google");
 	}
   @BeforeTest
   public void beforeTest() {
