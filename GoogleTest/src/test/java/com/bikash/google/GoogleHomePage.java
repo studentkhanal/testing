@@ -18,6 +18,7 @@ WebDriver driver;
 		driver.get("http://www.google.com");
 		driver.findElement(By.id("lst-ib")).sendKeys("Testing");
 		driver.findElement(By.name("btnk")).click();
+		
 	}
   @BeforeTest
   public void beforeTest() {
