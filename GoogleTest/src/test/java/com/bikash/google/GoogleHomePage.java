@@ -19,7 +19,7 @@ WebDriver driver;
 	@Test
   public void googleHome() {
 		driver.get("http://www.google.com");
-		driver.findElement(By.id("lst-ib")).sendKeys("Testing");
+		driver.findElement(By.id("lst-ib")).sendKeys("testing for git");
 		driver.findElement(By.name("btnG")).click();
 		
 		Assert.assertEquals(driver.getTitle(), "Google");
