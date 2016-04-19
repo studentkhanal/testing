@@ -23,6 +23,8 @@ WebDriver driver;
 		driver.findElement(By.name("btnG")).click();
 		
 		Assert.assertEquals(driver.getTitle(), "Google");
+		
+		driver.findElement(By.id("gb_70")).click();
 	}
   @BeforeTest
   public void beforeTest() {
